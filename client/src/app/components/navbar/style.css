@@ -20,13 +20,13 @@
 }
 
 .nav-link:hover {
-  color: rgb(210, 145, 250); /* Optional hover color */
+  color: rgb(210, 155, 240); /* Optional hover color */
 }
 
 /* Set active and focus state to purple */
 .nav-link:active,
 .nav-link:focus {
-  color: rgb(210, 145, 250) !important; /* Change active link color to purple */
+  color: rgb(210, 155, 240) !important; /* Change active link color to purple */
   text-decoration: none; /* Remove underline for consistency */
 }
 

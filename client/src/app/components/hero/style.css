@@ -1,7 +1,7 @@
 /* Hero Section Full Page */
 .hero-container {
   width: 100%;
-  height: 100vh; /* Full viewport height */
+  height: 80vh; /* Full viewport height */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -12,6 +12,16 @@
 .text-container {
   flex: 1; /* Takes up half the space */
   color: white;
+  font-weight: bold;
+}
+
+.hero-container .introText {
+  font-size: 75px;
+  color: rgb(190, 80, 250);
+}
+
+.hero-container .subText {
+  color: rgb(210, 155, 240);
 }
 
 /* Right Side - Image */
