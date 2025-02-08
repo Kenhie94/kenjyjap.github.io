@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { FaHome, FaUser, FaCode, FaFileAlt, FaBars, FaTimes, FaGithub, FaStar, FaCodeBranch } from 'react-icons/fa';
+import { FaHome, FaUser, FaCode, FaFileAlt, FaBars, FaTimes, FaGithub, FaStar, FaCodeBranch } from "react-icons/fa";
 import "./style.css";
 
 export default function Navbar() {
@@ -20,27 +20,29 @@ export default function Navbar() {
             <ul className="navbar-nav d-flex flex-row gap-4 fs-4 fw-bold">
               <li className="nav-item">
                 <Link className="nav-link" href="#">
-                  <FaHome className="pb-1"/> Home
+                  <FaHome className="pb-1" /> Home
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" href="#about">
-                <FaUser className="pb-1"/> About
+                  <FaUser className="pb-1" /> About
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" href="#projects">
-                <FaCode className="pb-1"/> Projects
+                  <FaCode className="pb-1" /> Projects
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" href="#resume">
-                <FaFileAlt className="pb-1"/> Resume
+                  <FaFileAlt className="pb-1" /> Resume
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" href="https://github.com/Kenhie94/kenjyjap.github.io">
-                  Github Repo
+              <li className="buttonRepo nav-item d-flex justify-content-center align-items-center">
+                <Link className="button-link" href="https://github.com/Kenhie94/kenjyjap.github.io">
+                  <FaStar />
+                  {`or\u00A0`}
+                  <FaCodeBranch />
                 </Link>
               </li>
             </ul>

@@ -26,11 +26,31 @@
 /* Set active and focus state to purple */
 .nav-link:active,
 .nav-link:focus {
-  color: rgb(210, 155, 240) !important; /* Change active link color to purple */
+  color: rgb(210, 155, 240); /* Change active link color to purple */
   text-decoration: none; /* Remove underline for consistency */
 }
 
+.buttonRepo {
+  border: 2px solid rgb(210, 155, 240);
+  text-decoration: none;
+  width: 150px;
 
+}
+
+.button-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(210, 155, 240);
+  text-decoration: none;
+  gap: 15px;
+}
+
+.buttonRepo:hover {
+  background-color: rgb(210, 155, 240);
+  border: 2px solid rgb(210, 155, 240);
+  color: white !important;
+}
 
 /* Add some spacing between links */
 .navbar-nav {
