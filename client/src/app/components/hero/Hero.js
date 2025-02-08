@@ -7,7 +7,7 @@ export default function Hero() {
   const [loopIndex, setLoopIndex] = useState(0); // Tracks which string to display
   const [typingSpeed, setTypingSpeed] = useState(100); // Typing speed
 
-  const textArray = ["Full Stack Developer", "Tech Enthusiast", "Software Developer", "Rock Climber", "TCG Collecter and Player"]; // Pre-defined text
+  const textArray = ["Full Stack Developer", "Tech Enthusiast", "Software Developer", "Bootcamp Graduate", "Rock Climber", "TCG Collecter and Player", "Outdoorsman"]; // Pre-defined text
 
   useEffect(() => {
     const handleTyping = () => {
