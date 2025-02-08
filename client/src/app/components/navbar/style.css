@@ -1,0 +1,38 @@
+/* Make the navbar static */
+.navbar-container {
+  position: sticky; /* Ensures it stays at the top of the page */
+  top: 0;
+  width: 100%;
+  background-color: #1e1e1e; /* Dark background color */
+  z-index: 1000; /* Ensures it appears above other elements */
+  padding: 10px 0; /* Optional padding */
+}
+
+.navbar-brand {
+  color: white
+}
+
+/* Additional styles for navbar links */
+/* Ensure navbar links stay purple when active */
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: rgb(210, 145, 250); /* Optional hover color */
+}
+
+/* Set active and focus state to purple */
+.nav-link:active,
+.nav-link:focus {
+  color: rgb(210, 145, 250) !important; /* Change active link color to purple */
+  text-decoration: none; /* Remove underline for consistency */
+}
+
+
+
+/* Add some spacing between links */
+.navbar-nav {
+  gap: 20px; /* Space between links */
+}

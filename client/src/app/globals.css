@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
 
 body {
-  background-color: rgb(30, 30, 30);
-  color: white;
+  background-color: rgb(30, 30, 30); /* Dark Background */
+  color: white !important;  /* Ensure text is white */
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif; 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
