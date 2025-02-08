@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import { FaHome, FaUser, FaCode, FaFileAlt, FaBars, FaTimes, FaGithub, FaStar, FaCodeBranch } from 'react-icons/fa';
 import "./style.css";
 
 export default function Navbar() {
@@ -19,22 +20,22 @@ export default function Navbar() {
             <ul className="navbar-nav d-flex flex-row gap-4 fs-4 fw-bold">
               <li className="nav-item">
                 <Link className="nav-link" href="#">
-                  Home
+                  <FaHome className="pb-1"/> Home
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" href="#about">
-                  About
+                <FaUser className="pb-1"/> About
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" href="#projects">
-                  Projects
+                <FaCode className="pb-1"/> Projects
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" href="#resume">
-                  Resume
+                <FaFileAlt className="pb-1"/> Resume
                 </Link>
               </li>
               <li className="nav-item">
