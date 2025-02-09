@@ -1,11 +1,11 @@
 /* Hero Section Full Page */
 .hero-container {
   width: 100%;
-  height: 80vh; /* Full viewport height */
+  height: 100vh; /* Full viewport height */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 10%; /* Adds spacing */
+  padding: 10% 10% 20% 5%; /* Adds spacing */
 }
 
 /* Left Side - Text */
