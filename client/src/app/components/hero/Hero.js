@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./style.css";
+import "./herostyle.css";
 
 export default function Hero() {
   const [currentText, setCurrentText] = useState(""); // Current text being typed

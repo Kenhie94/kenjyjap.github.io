@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { FaHome, FaUser, FaCode, FaFileAlt, FaBars, FaTimes, FaGithub, FaStar, FaCodeBranch } from "react-icons/fa";
-import "./style.css";
+import "./navbarstyle.css";
 
 export default function Navbar() {
   return (
