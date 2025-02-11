@@ -46,9 +46,55 @@ export default function About() {
       <div className="container about-container d-flex flex-row align-items-center justify-content-between">
         <div className="text-content d-flex flex-column">
           <h1>Education</h1>
+          <div class="timeline">
+            {/* <!-- Education Item --> */}
+            <div class="timeline-item">
+              <div class="timeline-icon"></div>
+              <div class="timeline-content">
+                <h3>
+                  UX/UI Software Development Boot Camp <span class="company">@Univeristy of Irvine</span>
+                </h3>
+                <p class="date">August 2024 - November 2024</p>
+              </div>
+            </div>
+          </div>
+          <h1 class="section-title">Experience</h1>
+          <div class="timeline">
+            {/* <!-- Experience Item 1 --> */}
+            <div class="timeline-item">
+              <div class="timeline-icon"></div>
+              <div class="timeline-content">
+                <h3>
+                  Software Developer <span class="company">@Bell</span>
+                </h3>
+                <p class="date">May 2024 - August 2024</p>
+                <ul>
+                  <li>Developed a web app to streamline internal ticket creation using the Jira API.</li>
+                  <li>Utilized the MEVN stack (MongoDB, Express, Vue.js, Node.js) for development.</li>
+                  <li>Enhanced efficiency of internal processes through automation.</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* <!-- Experience Item 2 --> */}
+            <div class="timeline-item">
+              <div class="timeline-icon"></div>
+              <div class="timeline-content">
+                <h3>
+                  Co-Chair <span class="company">@CUSEC (Canadian University Software Engineering Conference)</span>
+                </h3>
+                <p class="date">January 2024 - Present</p>
+                <ul>
+                  <li>Oversaw operations for a 15+ team of student organizers, handling logistics and sponsorships.</li>
+                  <li>Guided organizers in resolving conference challenges and managing speakers, sponsors, and venues.</li>
+                  <li>Managed recruitment, social media, and interviewed 90+ applicants.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="image-container">
-          <h1>Resume</h1>
+          <img src="/images/UCI-bootcamp-certification.jpg" alt="Kenjy Jap" className="resume-image" />
         </div>
       </div>
     </div>

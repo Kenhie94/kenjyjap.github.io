@@ -32,7 +32,6 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .profile-image {
@@ -40,4 +39,68 @@ p {
   max-width: 400px; /* Prevents image from being too large */
   border-radius: 10px; /* Optional rounded corners */
   border: 5px solid rgb(175, 50, 250);
+}
+
+.resume-image {
+  width: 100%; /* Adjusts image to fit container */
+  max-width: 1000px; /* Prevents image from being too large */
+  border-radius: 10px; /* Optional rounded corners */
+  border: 5px solid rgb(175, 50, 250);
+}
+
+/* Timeline Structure */
+.timeline {
+  position: relative;
+  margin-left: 20px;
+  padding-left: 40px;
+  border-left: 3px solid rgb(175, 50, 250);; /* Purple vertical line */
+}
+
+/* Timeline Item */
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+/* Circle Icon on Timeline */
+.timeline-icon {
+  width: 40px;
+  height: 12px;
+  border-bottom: 3px solid rgb(175, 50, 250);;
+  position: absolute;
+  left: -40px;
+  top: 5px;
+}
+
+/* Timeline Content */
+.timeline-content {
+  padding-left: 20px;
+}
+
+.timeline-content h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.company {
+  color: #b48ede; /* Soft purple color */
+  font-weight: bold;
+}
+
+.date {
+  font-size: 1rem;
+  color: #b0b0b0; /* Light gray */
+  margin-bottom: 10px;
+}
+
+/* Bullet Points */
+.timeline-content ul {
+  padding-left: 20px;
+}
+
+.timeline-content li {
+  font-size: 1rem;
+  line-height: 1.6;
 }
