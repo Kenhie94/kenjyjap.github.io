@@ -36,7 +36,7 @@ export default function Hero() {
   }, [currentText, isDeleting, loopIndex, typingSpeed]);
 
   return (
-    <div className="hero-container d-flex align-items-center justify-content-between">
+    <div id="hero" className="hero-container d-flex align-items-center justify-content-between">
       {/* Left Side - Text Content */}
       <div className="text-container">
         <p className="fs-3 py-5">Welcome to my portfolio.</p>

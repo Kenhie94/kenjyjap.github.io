@@ -2,7 +2,7 @@ import "./aboutstyle.css";
 
 export default function About() {
   return (
-    <div className="container about-container d-flex flex-row align-items-center justify-content-between">
+    <div id="about" className="container about-container d-flex flex-row align-items-center justify-content-between">
       {/* Left Side - Text */}
       <div className="text-content d-flex flex-column">
         <h1>About Me</h1>

@@ -32,10 +32,12 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .profile-image {
   width: 100%; /* Adjusts image to fit container */
   max-width: 400px; /* Prevents image from being too large */
   border-radius: 10px; /* Optional rounded corners */
+  border: 5px solid rgb(175, 50, 250);
 }
