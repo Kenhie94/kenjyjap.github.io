@@ -1,3 +1,41 @@
 span {
-  color: rgb(190, 80, 250);
+  color: rgb(175, 50, 250);
+}
+
+a {
+  color: rgb(175, 50, 250);
+}
+
+p {
+  font-size: larger;
+}
+
+/* Ensure the about section is properly aligned */
+.about-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px; /* Adjust spacing between text and image */
+  padding: 50px;
+}
+
+/* Left Side - Text Content */
+.text-content {
+  flex: 1; /* Takes up half of the space */
+  max-width: 50%; /* Ensures text doesn't get too wide */
+}
+
+/* Right Side - Image */
+.image-container {
+  flex: 1; /* Takes up the other half */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image {
+  width: 100%; /* Adjusts image to fit container */
+  max-width: 400px; /* Prevents image from being too large */
+  border-radius: 10px; /* Optional rounded corners */
 }
