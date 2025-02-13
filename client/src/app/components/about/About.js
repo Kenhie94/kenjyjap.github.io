@@ -65,13 +65,13 @@ export default function About() {
               <div class="timeline-icon"></div>
               <div class="timeline-content">
                 <h3>
-                  Software Developer <span class="company">@Bell</span>
+                  Software Developer <span class="company">@Fab Finder</span>
                 </h3>
-                <p class="date">May 2024 - August 2024</p>
+                <p class="date">December 2024 - Present</p>
                 <ul>
-                  <li>Developed a web app to streamline internal ticket creation using the Jira API.</li>
-                  <li>Utilized the MEVN stack (MongoDB, Express, Vue.js, Node.js) for development.</li>
-                  <li>Enhanced efficiency of internal processes through automation.</li>
+                  <li>Designed and developed a web application to optimize card search functionality and provide the latest decklists for new players.</li>
+                  <li>Leveraged the Next.js full-stack framework with MongoDB and Node.js to build a scalable and efficient platform.</li>
+                  <li>Improved system efficiency by integrating API calls, ensuring accurate and up-to-date card information retrieval.</li>
                 </ul>
               </div>
             </div>
@@ -81,16 +81,42 @@ export default function About() {
               <div class="timeline-icon"></div>
               <div class="timeline-content">
                 <h3>
-                  Co-Chair <span class="company">@CUSEC (Canadian University Software Engineering Conference)</span>
+                  Software Developer <span class="company">@UX/UI Boot Camp</span>
                 </h3>
-                <p class="date">January 2024 - Present</p>
+                <p class="date">August 2024 - November 2024</p>
+                <h4>Birdle</h4>
                 <ul>
-                  <li>Oversaw operations for a 15+ team of student organizers, handling logistics and sponsorships.</li>
-                  <li>Guided organizers in resolving conference challenges and managing speakers, sponsors, and venues.</li>
-                  <li>Managed recruitment, social media, and interviewed 90+ applicants.</li>
+                  <li>Led a three-person development team in designing and building a web-based game application.</li>
+                  <li>Developed a Wordle-inspired game using JavaScript, HTML, and CSS, focusing on responsive design and user-friendly gameplay mechanics.</li>
+                  <li>Implemented game logic and state management, ensuring smooth interactivity and real-time feedback.</li>
+                </ul>
+                <h4>TamaPudgy</h4>
+                <ul>
+                  <li>Developed TomoPudgy, a full-stack MERN (MongoDB, Express, React, Node.js) web application designed to assist users on their fitness and weight loss journey.</li>
+                  <li>
+                    Engineered an interactive diet tracking system, where a Tamagotchi-inspired virtual companion visually reflects users’ progress by gaining or losing weight based on daily caloric
+                    intake.
+                  </li>
+                  <li>Enhanced data accuracy and real-time tracking by integrating API calls, ensuring up-to-date food and calorie information retrieval.</li>
                 </ul>
               </div>
             </div>
+
+            {/* <!-- Experience Item 3 -->
+            <div class="timeline-item">
+              <div class="timeline-icon"></div>
+              <div class="timeline-content">
+                <h3>
+                  Networking & Marketing Coordinator <span class="company">Akupara Games</span>
+                </h3>
+                <p class="date">August 2020 - December 2020</p>
+                <ul>
+                  <li>Contributed to the strategic design enhancement of the website to optimize user engagement and promote increased interaction.</li>
+                  <li>Collaborated with the development team to offer valuable insights into gameplay enhancement and effective marketing strategies.</li>
+                  <li>Orchestrated and managed a high-impact live online streaming event.</li>
+                </ul>
+              </div>
+            </div> */}
           </div>
         </div>
         <div className="image-container">
