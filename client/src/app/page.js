@@ -5,6 +5,7 @@ import styled from "styled-components";
 import Navbar from "./components/navbar/Navbar";
 import Hero from "./components/hero/Hero";
 import About from "./components/about/About"
+import Project from "./components/project/Project"
 
 const AppContainer = styled.div`
   background-color: #1e1e1e; /* Match the background color of the hero section */
@@ -21,6 +22,7 @@ export default function Home() {
       <MainContent>
         <Hero />
         <About />
+        <Project />
       </MainContent>
     </AppContainer>
   );
