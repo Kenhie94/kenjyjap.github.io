@@ -10,6 +10,7 @@
   object-fit: cover;
   filter: brightness(40%);
   transition: 0.3s ease-in-out;
+  object-position: 50% 20%;
 }
 
 .card-img-overlay {

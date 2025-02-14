@@ -8,24 +8,24 @@ import styles from "./projectstyle.css"; // Import custom CSS
 // Sample Project Data
 const projects = [
   {
-    title: "Capital Coach",
-    description: "A financial management tool designed to empower individuals with smart financial planning, integrating simplicity with effectiveness.",
-    image: "/images/capital-coach.png",
-    github: "https://github.com/example/capital-coach",
+    title: "FabFinder",
+    description: "A comprehensive Flesh and Blood card search and deck-building platform that helps players find the latest decklists and explore card details.",
+    image: "/images/gif/FabFinder.gif",
+    github: "https://github.com/Kenhie94/FabFinder",
     demo: "#",
   },
   {
-    title: "PokePC",
-    description: "PokePC is a Pokedex & a user-friendly web app for managing and organizing Pokemon collections, creating battle teams, and tracking Pokemon details, designed for enthusiasts at all levels.",
-    image: "/images/pokepc.png",
-    github: "https://github.com/example/pokepc",
+    title: "TomoPudgy",
+    description: "A fun and interactive daily caloric tracker where your TamaPudgy, a virtual companion, gains or loses weight based on your real-life eating habits, encouraging healthier choices through gamification.",
+    image: "/images/gif/TomoPudgy.gif",
+    github: "https://github.com/anthonymoon2/TomoPudgy",
     demo: "#",
   },
   {
-    title: "PrivacyXPresso",
-    description: "PrivacyXPresso simplifies data deletion from big companies, enhancing online security with easy-to-use local tools.",
-    image: "/images/privacyx.png",
-    github: "https://github.com/example/privacyx",
+    title: "Birdle",
+    description: "Enjoy a fresh take on your favorite browser word game with this Wordle remake, featuring the same addictive gameplay and daily word challenges.",
+    image: "/images/gif/Birdle.gif",
+    github: "https://github.com/Kenhie94/Birdle",
     demo: "#",
   },
   {
