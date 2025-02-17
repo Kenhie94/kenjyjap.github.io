@@ -16,7 +16,8 @@ const projects = [
   },
   {
     title: "TomoPudgy",
-    description: "A fun and interactive daily caloric tracker where your TamaPudgy, a virtual companion, gains or loses weight based on your real-life eating habits, encouraging healthier choices through gamification.",
+    description:
+      "A fun and interactive daily caloric tracker where your TamaPudgy, a virtual companion, gains or loses weight based on your real-life eating habits, encouraging healthier choices through gamification.",
     image: "/images/gif/TomoPudgy.gif",
     github: "https://github.com/anthonymoon2/TomoPudgy",
     demo: "#",
@@ -39,44 +40,48 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div id="projects" className="container mt-5">
-      <h2 className="fw-bold text-light">Projects</h2>
-      <div className="row">
-        {projects.map((project, index) => (
-          <div key={index} className="col-md-6 mb-4">
-            <div className="card projectCard">
-              <img src={project.image} className="card-img" alt={project.title} />
-              <div className="card-img-overlay overlay">
-                <h3 className="projectTitle">{project.title}</h3>
-                <p className="projectDescription">{project.description}</p>
-                <div className="d-flex justify-content-center gap-3">
-                  <Link href={project.github} target="_blank" className="link">
-                    <FaGithub /> See on GitHub
-                  </Link>
-                  {project.demo && (
-                    <Link href={project.demo} target="_blank" className="link">
-                      <FaGlobe /> Try it Out
+    <div>
+      <div id="about" className="container projectContainer d-flex flex-row align-items-center justify-content-between">
+        <h1>Projects</h1>
+      </div>
+      <div id="projects" className="projectBox container">
+        <div className="row">
+          {projects.map((project, index) => (
+            <div key={index} className="col-md-6 mb-4">
+              <div className="card projectCard">
+                <img src={project.image} className="card-img" alt={project.title} />
+                <div className="card-img-overlay overlay">
+                  <h3 className="projectTitle">{project.title}</h3>
+                  <p className="projectDescription">{project.description}</p>
+                  <div className="d-flex justify-content-center gap-3">
+                    <Link href={project.github} target="_blank" className="link">
+                      <FaGithub /> See on GitHub
                     </Link>
-                  )}
+                    {project.demo && (
+                      <Link href={project.demo} target="_blank" className="link">
+                        <FaGlobe /> Try it Out
+                      </Link>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
 
-      {/* More Projects Coming Soon */}
-      <div className="text-center mt-3">
-        <div className={"card comingSoonCard"}>
-          <h3>More Projects Coming Soon...</h3>
-          <p>Stay tuned!</p>
-          <div className="d-flex justify-content-center gap-3">
-            <Link href="https://github.com/yourprofile" className="link">
-              <FaGithub /> See on GitHub
-            </Link>
-            <Link href="#" className="link">
-              <FaGlobe /> Try it Out
-            </Link>
+        {/* More Projects Coming Soon */}
+        <div className="text-center mt-3">
+          <div className={"card comingSoonCard"}>
+            <h3>More Projects Coming Soon...</h3>
+            <p>Stay tuned!</p>
+            <div className="d-flex justify-content-center gap-3">
+              <Link href="https://github.com/yourprofile" className="link">
+                <FaGithub /> See on GitHub
+              </Link>
+              <Link href="#" className="link">
+                <FaGlobe /> Try it Out
+              </Link>
+            </div>
           </div>
         </div>
       </div>

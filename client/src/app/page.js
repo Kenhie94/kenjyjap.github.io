@@ -6,6 +6,7 @@ import Navbar from "./components/navbar/Navbar";
 import Hero from "./components/hero/Hero";
 import About from "./components/about/About"
 import Project from "./components/project/Project"
+import Techstack from "./components/techstack/Teckstack"
 
 const AppContainer = styled.div`
   background-color: #1e1e1e; /* Match the background color of the hero section */
@@ -23,6 +24,7 @@ export default function Home() {
         <Hero />
         <About />
         <Project />
+        <Techstack />
       </MainContent>
     </AppContainer>
   );

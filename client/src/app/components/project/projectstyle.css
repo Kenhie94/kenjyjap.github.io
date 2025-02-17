@@ -1,3 +1,17 @@
+.projectContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px; /* Adjust spacing between text and image */
+  padding: 50px;
+}
+
+.projectBox {
+  position: relative;
+  margin-top: -40px;
+}
+
 .projectCard {
   position: relative;
   border: none;
