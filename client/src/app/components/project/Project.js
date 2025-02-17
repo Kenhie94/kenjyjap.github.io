@@ -2,8 +2,8 @@
 
 import React from "react";
 import Link from "next/link";
-import { FaGithub, FaGlobe } from "react-icons/fa"; // Import icons
-import styles from "./projectstyle.css"; // Import custom CSS
+import { FaGithub, FaGlobe } from "react-icons/fa";
+import "./projectstyle.css";
 
 // Sample Project Data
 const projects = [
@@ -44,17 +44,17 @@ export default function Projects() {
       <div className="row">
         {projects.map((project, index) => (
           <div key={index} className="col-md-6 mb-4">
-            <div className={`card ${styles.projectCard}`}>
+            <div className="card projectCard">
               <img src={project.image} className="card-img" alt={project.title} />
-              <div className={`card-img-overlay ${styles.overlay}`}>
-                <h3 className={styles.projectTitle}>{project.title}</h3>
-                <p className={styles.projectDescription}>{project.description}</p>
+              <div className="card-img-overlay overlay">
+                <h3 className="projectTitle">{project.title}</h3>
+                <p className="projectDescription">{project.description}</p>
                 <div className="d-flex justify-content-center gap-3">
-                  <Link href={project.github} target="_blank" className={styles.link}>
+                  <Link href={project.github} target="_blank" className="link">
                     <FaGithub /> See on GitHub
                   </Link>
                   {project.demo && (
-                    <Link href={project.demo} target="_blank" className={styles.link}>
+                    <Link href={project.demo} target="_blank" className="link">
                       <FaGlobe /> Try it Out
                     </Link>
                   )}
@@ -66,15 +66,15 @@ export default function Projects() {
       </div>
 
       {/* More Projects Coming Soon */}
-      <div className="text-center mt-5">
-        <div className={`card ${styles.comingSoonCard}`}>
+      <div className="text-center mt-3">
+        <div className={"card comingSoonCard"}>
           <h3>More Projects Coming Soon...</h3>
           <p>Stay tuned!</p>
           <div className="d-flex justify-content-center gap-3">
-            <Link href="https://github.com/yourprofile" className={styles.link}>
+            <Link href="https://github.com/yourprofile" className="link">
               <FaGithub /> See on GitHub
             </Link>
-            <Link href="#" className={styles.link}>
+            <Link href="#" className="link">
               <FaGlobe /> Try it Out
             </Link>
           </div>
