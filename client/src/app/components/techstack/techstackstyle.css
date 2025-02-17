@@ -6,3 +6,29 @@
   gap: 50px; /* Adjust spacing between text and image */
   padding: 50px;
 }
+
+.techCard {
+  background-color: #1e1e1e; /* Dark theme */
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+  border: none;
+}
+
+.techList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.techItem {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
