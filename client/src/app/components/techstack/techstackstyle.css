@@ -1,3 +1,4 @@
+/* Tech Stack Container */
 .techstackContainer {
   display: flex;
   flex-direction: row;
@@ -7,28 +8,51 @@
   padding: 50px;
 }
 
-.techCard {
-  background-color: #1e1e1e; /* Dark theme */
-  border-radius: 10px;
-  padding: 20px;
-  color: white;
-  border: none;
+.techstackBubbles {
+  position: relative;
+  margin-top: -50px;
 }
 
+/* Card Styling */
+.techCard {
+  background-color: #2b2b2b; /* Dark theme */
+  margin: 10px;
+  padding: 20px;
+  color: white;
+  border-radius: 15px;
+  border: solid #2b2b2b;
+}
+
+/* Tech List Grid (3 Columns) */
 .techList {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3x3 grid layout */
+  gap: 20px;
   justify-content: center;
-  gap: 10px;
+  align-items: center;
   margin-top: 15px;
 }
 
+/* Individual Tech Item */
 .techItem {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 8px 15px;
-  border-radius: 5px;
-  font-size: 14px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 5px;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+  gap: 8px; /* Space between icon and text */
+}
+
+/* Icon Styling */
+.techItem svg {
+  font-size: 40px; /* Icon size */
+  color: #b48ede; /* Default color */
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.techItem:hover svg {
+  transform: scale(1.2);
+  color: #d1b3ff;
 }

@@ -2,12 +2,11 @@ import "./techstackstyle.css";
 
 import React from "react";
 import { FaCode, FaServer, FaTools, FaLaptopCode, FaHtml5, FaNodeJs, FaVuejs, FaReact, FaGithub, FaGitlab, FaBootstrap } from "react-icons/fa";
-import { TbSql, TbBrandNextjs, TbBrandGraphql, TbPassword } from "react-icons/tb"
+import { TbSql, TbBrandNextjs, TbBrandGraphql, TbPassword } from "react-icons/tb";
 import { SiMysql, SiPostgresql, SiJavascript, SiTypescript, SiMongodb, SiPostman, SiInsomnia, SiTailwindcss, SiExpress, SiMongoose } from "react-icons/si";
 import { BiLogoVisualStudio } from "react-icons/bi";
 import { GiElephant } from "react-icons/gi";
 import { MdNoEncryption } from "react-icons/md";
-
 
 // Sample Data with React Icons
 const techCategories = [
@@ -66,19 +65,22 @@ const techCategories = [
 export default function TechStack() {
   return (
     <div className="container mt-5">
-      <h2 className="fw-bold text-light text-center">My Techstack</h2>
-      <div className="row">
+      <div>
+        <h1 className="techstackContainer">My Techstack</h1>
+      </div>
+      <div className="techstackBubbles row">
         {techCategories.map((category, index) => (
           <div key={index} className="col-md-6 mb-4">
-            <div className={"card techCard"}>
-              <div className="card-body text-center">
+            <div className="card techCard">
+              <div className="card-body text-center ">
                 {category.icon}
                 <h4 className="fw-bold mt-2">{category.title}</h4>
-                <div className="techLi">
+                <div className="techList">
                   {category.technologies.map((tech, i) => (
-                    <span key={i} className="techIt">
-                      {tech.icon} {tech.name}
-                    </span>
+                    <div key={i} className="techItem">
+                      {tech.icon}
+                      <span>{tech.name}</span>
+                    </div>
                   ))}
                 </div>
               </div>
