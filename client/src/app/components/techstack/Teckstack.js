@@ -14,22 +14,22 @@ const techCategories = [
     title: "Languages",
     icon: <FaCode size={30} />,
     technologies: [
-      { name: "HTML", icon: <FaHtml5 /> },
+      { name: "JavaScript", icon: <SiJavascript /> },
+      { name: "TypeScript", icon: <SiTypescript /> },
       { name: "SQL", icon: <TbSql /> },
       { name: "MySQL", icon: <SiMysql /> },
       { name: "PostgreSQL", icon: <SiPostgresql /> },
-      { name: "JavaScript", icon: <SiJavascript /> },
-      { name: "TypeScript", icon: <SiTypescript /> },
+      { name: "HTML", icon: <FaHtml5 /> },
     ],
   },
   {
     title: "Frameworks",
     icon: <FaServer size={30} />,
     technologies: [
-      { name: "Node.js", icon: <FaNodeJs /> },
-      { name: "Vue.js", icon: <FaVuejs /> },
       { name: "React.js", icon: <FaReact /> },
       { name: "Next.js", icon: <TbBrandNextjs /> },
+      { name: "Vue.js", icon: <FaVuejs /> },
+      { name: "Node.js", icon: <FaNodeJs /> },
     ],
   },
   {
