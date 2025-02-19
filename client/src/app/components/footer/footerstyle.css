@@ -1,0 +1,38 @@
+.footerContainer {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerText {
+  font-size: 14px;
+}
+
+.heartIcon {
+  color: red;
+}
+
+.highlight {
+  color: #b48ede;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.socialIcons {
+  position: relative;
+  margin-top: -25px;
+}
+
+.socialIcons a {
+  color: white;
+  font-size: 20px;
+  margin-left: 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+.socialIcons a:hover {
+  color: #b48ede;
+}

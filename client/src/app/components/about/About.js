@@ -46,28 +46,28 @@ export default function About() {
       <div className="container about-container d-flex flex-row align-items-center justify-content-between">
         <div className="text-content d-flex flex-column">
           <h1>Education</h1>
-          <div class="timeline">
+          <div className="timeline">
             {/* <!-- Education Item --> */}
-            <div class="timeline-item">
-              <div class="timeline-icon"></div>
-              <div class="timeline-content">
+            <div className="timeline-item">
+              <div className="timeline-icon"></div>
+              <div className="timeline-content">
                 <h3>
-                  UX/UI Software Development Boot Camp <span class="company">@Univeristy of Irvine</span>
+                  UX/UI Software Development Boot Camp <span className="company">@Univeristy of Irvine</span>
                 </h3>
-                <p class="date">August 2024 - November 2024</p>
+                <p className="date">August 2024 - November 2024</p>
               </div>
             </div>
           </div>
-          <h1 class="section-title">Experience</h1>
-          <div class="timeline">
+          <h1 className="section-title">Experience</h1>
+          <div className="timeline">
             {/* <!-- Experience Item 1 --> */}
-            <div class="timeline-item">
-              <div class="timeline-icon"></div>
-              <div class="timeline-content">
+            <div className="timeline-item">
+              <div className="timeline-icon"></div>
+              <div className="timeline-content">
                 <h3>
-                  Software Developer <span class="company">@Fab Finder</span>
+                  Software Developer <span className="company">@Fab Finder</span>
                 </h3>
-                <p class="date">December 2024 - Present</p>
+                <p className="date">December 2024 - Present</p>
                 <ul>
                   <li>Designed and developed a web application to optimize card search functionality and provide the latest decklists for new players.</li>
                   <li>Leveraged the Next.js full-stack framework with MongoDB and Node.js to build a scalable and efficient platform.</li>
@@ -77,13 +77,13 @@ export default function About() {
             </div>
 
             {/* <!-- Experience Item 2 --> */}
-            <div class="timeline-item">
-              <div class="timeline-icon"></div>
-              <div class="timeline-content">
+            <div className="timeline-item">
+              <div className="timeline-icon"></div>
+              <div className="timeline-content">
                 <h3>
-                  Software Developer <span class="company">@UX/UI Boot Camp</span>
+                  Software Developer <span className="company">@UX/UI Boot Camp</span>
                 </h3>
-                <p class="date">August 2024 - November 2024</p>
+                <p className="date">August 2024 - November 2024</p>
                 <h4>Birdle</h4>
                 <ul>
                   <li>Led a three-person development team in designing and building a web-based game application.</li>
@@ -103,13 +103,13 @@ export default function About() {
             </div>
 
             {/* <!-- Experience Item 3 -->
-            <div class="timeline-item">
-              <div class="timeline-icon"></div>
-              <div class="timeline-content">
+            <div className="timeline-item">
+              <div className="timeline-icon"></div>
+              <div className="timeline-content">
                 <h3>
-                  Networking & Marketing Coordinator <span class="company">Akupara Games</span>
+                  Networking & Marketing Coordinator <span className="company">Akupara Games</span>
                 </h3>
-                <p class="date">August 2020 - December 2020</p>
+                <p className="date">August 2020 - December 2020</p>
                 <ul>
                   <li>Contributed to the strategic design enhancement of the website to optimize user engagement and promote increased interaction.</li>
                   <li>Collaborated with the development team to offer valuable insights into gameplay enhancement and effective marketing strategies.</li>
