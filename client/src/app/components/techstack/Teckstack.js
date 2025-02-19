@@ -79,7 +79,9 @@ export default function TechStack() {
                   {category.technologies.map((tech, i) => (
                     <div key={i} className="techItem">
                       {tech.icon}
-                      <span>{tech.name}</span>
+                      <div className="techName">
+                        <span>{tech.name}</span>
+                      </div>
                     </div>
                   ))}
                 </div>

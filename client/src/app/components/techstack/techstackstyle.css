@@ -46,7 +46,7 @@
 
 /* Icon Styling */
 .techItem svg {
-  font-size: 40px; /* Icon size */
+  font-size: 30px; /* Icon size */
   color: #b48ede; /* Default color */
   transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
@@ -55,4 +55,8 @@
 .techItem:hover svg {
   transform: scale(1.2);
   color: #d1b3ff;
+}
+
+.techName span {
+  color: #b48ede;
 }
