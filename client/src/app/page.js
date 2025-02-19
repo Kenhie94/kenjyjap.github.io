@@ -7,6 +7,7 @@ import Hero from "./components/hero/Hero";
 import About from "./components/about/About"
 import Project from "./components/project/Project"
 import Techstack from "./components/techstack/Teckstack"
+import Github from "./components/github/Github"
 import Footer from "./components/footer/Footer"
 
 const AppContainer = styled.div`
@@ -26,6 +27,7 @@ export default function Home() {
         <About />
         <Project />
         <Techstack />
+        <Github />
       </MainContent>
       <Footer />
     </AppContainer>
