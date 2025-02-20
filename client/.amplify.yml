@@ -1,13 +1,15 @@
 version: 1
 frontend:
   phases:
+    preBuild:
+      commands:
+        - npm install
     build:
       commands:
-        - cd client
-        - npm install
         - npm run build
+        - npm run export
   artifacts:
-    baseDirectory: .next
+    baseDirectory: out
     files:
       - '**/*'
   cache:
