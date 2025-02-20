@@ -36,20 +36,20 @@ export default function Hero() {
   }, [currentText, isDeleting, loopIndex, typingSpeed]);
 
   return (
-    <div id="hero" className="hero-container d-flex align-items-center justify-content-between">
+    <div id="hero" className="heroContainer d-flex align-items-center justify-content-between">
       {/* Left Side - Text Content */}
-      <div className="text-container">
+      <div className="textContainer">
         <p className="fs-3 py-5">Welcome to my portfolio.</p>
         <p className="introText">I'm Kenjy Jap</p>
         <p className="subText fs-3 py-5">{currentText}<span className="cursor">|</span></p>
       </div>
 
       {/* Right Side - Image */}
-      <div className="image-container">
+      <div className="imageContainer">
         <img
           src="/images/gif/pixel-camp-art.gif"
           alt="Pixel art of someone camping"
-          className="hero-image"
+          className="heroImage"
         />
       </div>
     </div>

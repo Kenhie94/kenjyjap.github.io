@@ -61,13 +61,13 @@ export default function Github() {
         ) : (
           <>
             {/* Scrollable Container for Both Grid & Month Labels */}
-            <div className="scrollable-wrapper" ref={scrollableRef}>
+            <div className="scrollableWrapper" ref={scrollableRef}>
               {/* Contribution Grid */}
-              <div className="contributions-grid">
+              <div className="contributionsGrid">
                 {weeks.map((week, weekIndex) => (
-                  <div key={weekIndex} className="week-column">
+                  <div key={weekIndex} className="weekColumn">
                     {week.contributionDays.map((day, dayIndex) => (
-                      <div key={dayIndex} className="contribution-box" style={{ backgroundColor: getColor(day.contributionCount) }} title={`${day.date}: ${day.contributionCount} contributions`} />
+                      <div key={dayIndex} className="contributionBox" style={{ backgroundColor: getColor(day.contributionCount) }} title={`${day.date}: ${day.contributionCount} contributions`} />
                     ))}
                   </div>
                 ))}
@@ -81,11 +81,11 @@ export default function Github() {
               </h5>
               <div className="d-flex flex-row">
                 <h5 className="">Less</h5>
-                <div className="legend-box mx-1 p-2" style={{ backgroundColor: getColor(0) }}></div>
-                <div className="legend-box mx-1 p-2" style={{ backgroundColor: getColor(2) }}></div>
-                <div className="legend-box mx-1 p-2" style={{ backgroundColor: getColor(5) }}></div>
-                <div className="legend-box mx-1 p-2" style={{ backgroundColor: getColor(10) }}></div>
-                <div className="legend-box mx-1 p-2" style={{ backgroundColor: getColor(20) }}></div>
+                <div className="legendBox mx-1 p-2" style={{ backgroundColor: getColor(0) }}></div>
+                <div className="legendBox mx-1 p-2" style={{ backgroundColor: getColor(2) }}></div>
+                <div className="legendBox mx-1 p-2" style={{ backgroundColor: getColor(5) }}></div>
+                <div className="legendBox mx-1 p-2" style={{ backgroundColor: getColor(10) }}></div>
+                <div className="legendBox mx-1 p-2" style={{ backgroundColor: getColor(20) }}></div>
                 <h5>More</h5>
               </div>
             </div>

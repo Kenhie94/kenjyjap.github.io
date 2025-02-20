@@ -3,9 +3,9 @@ import "./aboutstyle.css";
 export default function About() {
   return (
     <div>
-      <div id="about" className="container about-container d-flex flex-row align-items-center justify-content-between">
+      <div id="about" className="container aboutContainer d-flex flex-row align-items-center justify-content-between">
         {/* Left Side - Text */}
-        <div className="text-content d-flex flex-column">
+        <div className="textContent d-flex flex-column">
           <h1>About Me</h1>
           <p>
             Hello! My name is <span>Kenjy</span>, and I am a Full-Stack Developer based in California. I have a deep passion for problem-solving, coding, and leveraging technology to build impactful
@@ -38,19 +38,19 @@ export default function About() {
         </div>
 
         {/* Right Side - Image */}
-        <div className="image-container">
-          <img src="/images/profile-picture.jpg" alt="Kenjy Jap" className="profile-image" />
+        <div className="imageContainer">
+          <img src="/images/profile-picture.jpg" alt="Kenjy Jap" className="profileImage" />
         </div>
       </div>
 
-      <div id="resume" className="container about-container d-flex flex-row align-items-center justify-content-between">
-        <div className="text-content d-flex flex-column">
+      <div id="resume" className="container aboutContainer d-flex flex-row align-items-center justify-content-between">
+        <div className="textContent d-flex flex-column">
           <h1>Education</h1>
           <div className="timeline">
             {/* <!-- Education Item --> */}
-            <div className="timeline-item">
-              <div className="timeline-icon"></div>
-              <div className="timeline-content">
+            <div className="timelineItem">
+              <div className="timelineIcon"></div>
+              <div className="timelineContent">
                 <h3>
                   UX/UI Software Development Boot Camp <span className="company">@Univeristy of Irvine</span>
                 </h3>
@@ -58,12 +58,12 @@ export default function About() {
               </div>
             </div>
           </div>
-          <h1 className="section-title">Experience</h1>
+          <h1 className="sectionTitle">Experience</h1>
           <div className="timeline">
             {/* <!-- Experience Item 1 --> */}
-            <div className="timeline-item">
-              <div className="timeline-icon"></div>
-              <div className="timeline-content">
+            <div className="timelineItem">
+              <div className="timelineIcon"></div>
+              <div className="timelineContent">
                 <h3>
                   Software Developer <span className="company">@Fab Finder</span>
                 </h3>
@@ -77,9 +77,9 @@ export default function About() {
             </div>
 
             {/* <!-- Experience Item 2 --> */}
-            <div className="timeline-item">
-              <div className="timeline-icon"></div>
-              <div className="timeline-content">
+            <div className="timelineItem">
+              <div className="timelineIcon"></div>
+              <div className="timelineContent">
                 <h3>
                   Software Developer <span className="company">@UX/UI Boot Camp</span>
                 </h3>
@@ -119,8 +119,8 @@ export default function About() {
             </div> */}
           </div>
         </div>
-        <div className="image-container">
-          <img src="/images/UCI-bootcamp-certification.jpg" alt="Kenjy Jap" className="resume-image" />
+        <div className="imageContainer">
+          <img src="/images/UCI-bootcamp-certification.jpg" alt="Kenjy Jap" className="resumeImage" />
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 /* Make the navbar static */
-.navbar-container {
+.navbarContainer {
   position: sticky; /* Ensures it stays at the top of the page */
   top: 0;
   width: 100%;
@@ -8,24 +8,24 @@
   padding: 10px 0; /* Optional padding */
 }
 
-.navbar-brand {
+.navbarBrand {
   color: white
 }
 
 /* Additional styles for navbar links */
 /* Ensure navbar links stay purple when active */
-.nav-link {
+.navLink {
   color: white;
   text-decoration: none;
 }
 
-.nav-link:hover {
+.navLink:hover {
   color: rgb(210, 155, 240); /* Optional hover color */
 }
 
 /* Set active and focus state to purple */
-.nav-link:active,
-.nav-link:focus {
+.navLink:active,
+.navLink:focus {
   color: rgb(210, 155, 240); /* Change active link color to purple */
   text-decoration: none; /* Remove underline for consistency */
 }
@@ -37,7 +37,7 @@
 
 }
 
-.button-link {
+.buttonLink {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,11 +51,11 @@
   border: 2px solid rgb(210, 155, 240);
 }
 
-.button-link:hover {
+.buttonLink:hover {
   color: white;
 }
 
 /* Add some spacing between links */
-.navbar-nav {
+.navbarNav {
   gap: 20px; /* Space between links */
 }

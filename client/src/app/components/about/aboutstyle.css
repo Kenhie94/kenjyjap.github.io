@@ -11,7 +11,7 @@ p {
 }
 
 /* Ensure the about section is properly aligned */
-.about-container {
+.aboutContainer {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -21,27 +21,27 @@ p {
 }
 
 /* Left Side - Text Content */
-.text-content {
+.textContent {
   flex: 1; /* Takes up half of the space */
   max-width: 50%; /* Ensures text doesn't get too wide */
 }
 
 /* Right Side - Image */
-.image-container {
+.imageContainer {
   flex: 1; /* Takes up the other half */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.profile-image {
+.profileImage {
   width: 100%; /* Adjusts image to fit container */
   max-width: 400px; /* Prevents image from being too large */
   border-radius: 10px; /* Optional rounded corners */
   border: 5px solid rgb(175, 50, 250);
 }
 
-.resume-image {
+.resumeImage {
   width: 100%; /* Adjusts image to fit container */
   max-width: 1000px; /* Prevents image from being too large */
   border-radius: 10px; /* Optional rounded corners */
@@ -57,7 +57,7 @@ p {
 }
 
 /* Timeline Item */
-.timeline-item {
+.timelineItem {
   display: flex;
   align-items: flex-start;
   margin-bottom: 30px;
@@ -65,7 +65,7 @@ p {
 }
 
 /* Circle Icon on Timeline */
-.timeline-icon {
+.timelineIcon {
   width: 40px;
   height: 12px;
   border-bottom: 3px solid rgb(175, 50, 250);;
@@ -75,11 +75,11 @@ p {
 }
 
 /* Timeline Content */
-.timeline-content {
+.timelineContent {
   padding-left: 20px;
 }
 
-.timeline-content h3 {
+.timelineContent h3 {
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -96,11 +96,11 @@ p {
 }
 
 /* Bullet Points */
-.timeline-content ul {
+.timelineContent ul {
   padding-left: 20px;
 }
 
-.timeline-content li {
+.timelineContent li {
   font-size: 1rem;
   line-height: 1.6;
 }

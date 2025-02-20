@@ -75,7 +75,7 @@ export default function Projects() {
             <h3>More Projects Coming Soon...</h3>
             <p>Stay tuned!</p>
             <div className="d-flex justify-content-center gap-3">
-              <Link href="https://github.com/yourprofile" className="link">
+              <Link href="https://github.com/Kenhie94/kenjyjap.github.io" className="link">
                 <FaGithub /> See on GitHub
               </Link>
               <Link href="#" className="link">
