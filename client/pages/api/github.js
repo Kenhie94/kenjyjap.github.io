@@ -1,6 +1,6 @@
 export default async function handler(req, res) {
   const GITHUB_USERNAME = process.env.NEXT_PUBLIC_GITHUB_USERNAME;
-  const GITHUB_TOKEN = process.env.GITHUB_TOKEN; // Secure server-side variable
+  const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 
   if (!GITHUB_TOKEN) {
     return res.status(500).json({ error: "Missing GitHub token" });
