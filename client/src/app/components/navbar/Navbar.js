@@ -3,13 +3,14 @@
 import React from "react";
 import Link from "next/link";
 import { FaHome, FaUser, FaCode, FaFileAlt, FaStar, FaCodeBranch } from "react-icons/fa";
+import { GrLanguage } from "react-icons/gr";
 import "./navbarstyle.css";
 
 export default function Navbar() {
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     if (section) {
-      section.scrollIntoView({ behavior: "smooth"});
+      section.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -27,12 +28,17 @@ export default function Navbar() {
             <ul className="navbar-nav d-flex flex-row gap-4 fs-4 fw-bold">
               <li className="nav-item">
                 <Link className="nav-link" href="#hero">
-                  <FaHome className="pb-1" onClick={() => scrollToSection("hero")} style={{ cursor: "pointer" }}/> Home
+                  <FaHome className="pb-1" onClick={() => scrollToSection("hero")} style={{ cursor: "pointer" }} /> Home
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" href="#about">
-                  <FaUser className="pb-1" onClick={() => scrollToSection("about")} style={{ cursor: "pointer" }}/> About
+                  <FaUser className="pb-1" onClick={() => scrollToSection("about")} style={{ cursor: "pointer" }} /> About
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" href="#resume">
+                  <FaFileAlt className="pb-1" /> Resume
                 </Link>
               </li>
               <li className="nav-item">
@@ -41,8 +47,8 @@ export default function Navbar() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href="#resume">
-                  <FaFileAlt className="pb-1" /> Resume
+                <Link className="nav-link" href="#techstack">
+                  <GrLanguage className="pb-1" /> Techstack
                 </Link>
               </li>
               <li className="buttonRepo nav-item d-flex justify-content-center align-items-center">

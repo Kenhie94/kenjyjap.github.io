@@ -64,7 +64,7 @@ const techCategories = [
 
 export default function TechStack() {
   return (
-    <div className="container mt-5">
+    <div id="techstack" className="container mt-5">
       <div>
         <h1 className="techstackContainer">My Techstack</h1>
       </div>

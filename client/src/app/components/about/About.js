@@ -43,7 +43,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="container about-container d-flex flex-row align-items-center justify-content-between">
+      <div id="resume" className="container about-container d-flex flex-row align-items-center justify-content-between">
         <div className="text-content d-flex flex-column">
           <h1>Education</h1>
           <div className="timeline">
