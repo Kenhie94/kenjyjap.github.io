@@ -7,15 +7,31 @@
   margin: 0 auto;
 }
 
-/* Month Labels Above the Grid */
+/* Scrollable Container - Keeps Months + Grid Synced */
+.scrollable-container {
+  overflow-x: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+/* Month Labels (Above Grid & Sticky) */
 .month-labels {
-  display: grid;
-  grid-template-columns: repeat(53, 12px); /* 53 weeks */
-  gap: 4px;
-  justify-content: center;
+  display: flex;
+  position: sticky;
+  top: 0;
+  background-color: #1e1e1e;
+  z-index: 2;
+  padding-bottom: 5px;
+}
+
+.month-labels span {
+  position: relative;
+  width: 50px; /* Space out the labels properly */
+  text-align: center;
   font-size: 12px;
   color: #aaa;
-  padding: 5px;
 }
 
 /* Grid Layout: Each column is a week, each row is a day (Sunday-Saturday) */
@@ -49,11 +65,12 @@
 /* Legend Styling */
 .legend {
   display: flex;
+  align-items: center;
   justify-content: center;
   gap: 5px;
   font-size: 12px;
   color: #aaa;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .legend-box {
