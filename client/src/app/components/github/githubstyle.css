@@ -1,14 +1,22 @@
-.github-container {
-  background-color: #1e1e1e;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  max-width: 750px; /* Same width as tech stack */
-  margin: 0 auto;
+.githubContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px; /* Adjust spacing between text and image */
+  padding: 50px;
 }
 
-/* Scrollable Container - Keeps Months + Grid Synced */
-.scrollable-container {
+.graphContainer {
+  position: relative;
+  margin-top: -50px;
+  background-color: #1e1e1e;
+  color: white;
+  width: auto;
+}
+
+/* Scrollable Container for Grid & Labels */
+.scrollable-wrapper {
   overflow-x: auto;
   display: flex;
   flex-direction: column;
@@ -16,45 +24,27 @@
   padding-bottom: 10px;
 }
 
-/* Month Labels (Above Grid & Sticky) */
-.month-labels {
-  display: flex;
-  position: sticky;
-  top: 0;
-  background-color: #1e1e1e;
-  z-index: 2;
-  padding-bottom: 5px;
-}
-
-.month-labels span {
-  position: relative;
-  width: 50px; /* Space out the labels properly */
-  text-align: center;
-  font-size: 12px;
-  color: #aaa;
-}
-
-/* Grid Layout: Each column is a week, each row is a day (Sunday-Saturday) */
+/* Grid Layout: 53 Weeks */
 .contributions-grid {
   display: flex;
-  gap: 4px;
+  gap: 5px;
   justify-content: center;
   padding: 10px;
   overflow-x: auto;
 }
 
-/* Each Week as a Column */
+/* Each Week is a Column */
 .week-column {
   display: grid;
   grid-template-rows: repeat(7, 12px); /* 7 Days (Sunday-Saturday) */
-  gap: 4px;
+  gap: 12px;
 }
 
 /* Individual Contribution Box */
 .contribution-box {
-  width: 12px;
-  height: 12px;
-  border-radius: 2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
   transition: transform 0.2s ease-in-out;
 }
 
@@ -62,19 +52,23 @@
   transform: scale(1.2);
 }
 
-/* Legend Styling */
+/* Legend */
 .legend {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 5px;
+  justify-content: center; /* Centers the legend */
+  gap: 10px; /* Spaces out the boxes evenly */
   font-size: 12px;
   color: #aaa;
   margin-top: 10px;
+  padding: 0 10px;
 }
 
+/* Style for Legend Boxes */
 .legend-box {
-  width: 12px;
-  height: 12px;
+  position: relative;
+  margin-top: 5px;
+  width: 14px; /* Slightly larger for better visibility */
+  height: 14px;
   border-radius: 2px;
 }

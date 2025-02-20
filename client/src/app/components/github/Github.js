@@ -8,9 +8,7 @@ export default function Github() {
   const [totalContributions, setTotalContributions] = useState(0);
   const [error, setError] = useState(null);
   const [months, setMonths] = useState([]);
-
-  // Ref to track the scrolling of the grid
-  const scrollableContainerRef = useRef(null);
+  const scrollableRef = useRef(null);
 
   useEffect(() => {
     async function fetchContributions() {
@@ -27,7 +25,7 @@ export default function Github() {
         setTotalContributions(calendar.totalContributions);
         setWeeks(calendar.weeks);
 
-        // Extract month labels, avoiding duplicate at the start/end
+        // Extract month labels with correct positioning
         const monthLabels = [];
         let lastMonth = "";
         calendar.weeks.forEach((week, index) => {
@@ -36,8 +34,8 @@ export default function Github() {
             month: "short",
           });
 
-          // Add month label only when the month changes and avoid duplicate at start/end
-          if (currentMonth !== lastMonth && !(monthLabels.length > 0 && currentMonth === monthLabels[0].month)) {
+          // Add month label only when the month changes
+          if (currentMonth !== lastMonth) {
             monthLabels.push({ month: currentMonth, index });
             lastMonth = currentMonth;
           }
@@ -53,61 +51,56 @@ export default function Github() {
   }, []);
 
   return (
-    <div className="github-container">
-      <h2>My Github Contributions</h2>
-      {error ? (
-        <p style={{ color: "red" }}>{error}</p>
-      ) : (
-        <>
-          {/* Scrollable container with both months and grid */}
-          <div className="scrollable-container" ref={scrollableContainerRef}>
-            {/* Month Labels - Stick to the top */}
-            <div className="month-labels">
-              {months.map((month, index) => (
-                <span key={index} style={{ left: `${month.index * 16}px` }}>
-                  {month.month}
-                </span>
-              ))}
+    <div className="container mt-2">
+      <div>
+        <h1 className="githubContainer">My GitHub Contributions</h1>
+      </div>
+      <div className="graphContainer">
+        {error ? (
+          <p style={{ color: "red" }}>{error}</p>
+        ) : (
+          <>
+            {/* Scrollable Container for Both Grid & Month Labels */}
+            <div className="scrollable-wrapper" ref={scrollableRef}>
+              {/* Contribution Grid */}
+              <div className="contributions-grid">
+                {weeks.map((week, weekIndex) => (
+                  <div key={weekIndex} className="week-column">
+                    {week.contributionDays.map((day, dayIndex) => (
+                      <div key={dayIndex} className="contribution-box" style={{ backgroundColor: getColor(day.contributionCount) }} title={`${day.date}: ${day.contributionCount} contributions`} />
+                    ))}
+                  </div>
+                ))}
+              </div>
             </div>
 
-            {/* Contribution Grid */}
-            <div className="contributions-grid">
-              {weeks.map((week, weekIndex) => (
-                <div key={weekIndex} className="week-column">
-                  {week.contributionDays.map((day, dayIndex) => (
-                    <div
-                      key={dayIndex}
-                      className="contribution-box"
-                      style={{ backgroundColor: getColor(day.contributionCount) }}
-                      title={`${day.date}: ${day.contributionCount} contributions`}
-                    />
-                  ))}
-                </div>
-              ))}
+            {/* Contribution Legend */}
+            <div className="legend d-flex flex-row justify-content-between">
+              <h5>
+                {totalContributions} contributions in {new Date().getFullYear()}
+              </h5>
+              <div className="d-flex flex-row">
+                <h5 className="">Less</h5>
+                <div className="legend-box mx-1 p-2" style={{ backgroundColor: getColor(0) }}></div>
+                <div className="legend-box mx-1 p-2" style={{ backgroundColor: getColor(2) }}></div>
+                <div className="legend-box mx-1 p-2" style={{ backgroundColor: getColor(5) }}></div>
+                <div className="legend-box mx-1 p-2" style={{ backgroundColor: getColor(10) }}></div>
+                <div className="legend-box mx-1 p-2" style={{ backgroundColor: getColor(20) }}></div>
+                <h5>More</h5>
+              </div>
             </div>
-          </div>
-
-          {/* Legend for Contribution Intensity */}
-          <div className="legend">
-            <span>Less</span>
-            <div className="legend-box" style={{ backgroundColor: getColor(0) }}></div>
-            <div className="legend-box" style={{ backgroundColor: getColor(2) }}></div>
-            <div className="legend-box" style={{ backgroundColor: getColor(5) }}></div>
-            <div className="legend-box" style={{ backgroundColor: getColor(10) }}></div>
-            <span>More</span>
-          </div>
-
-          <p>{totalContributions} contributions in {new Date().getFullYear()}</p>
-        </>
-      )}
+          </>
+        )}
+      </div>
     </div>
   );
 }
 
-// Function to determine color intensity based on contribution count
+// GitHub Contribution Colors (Based on their Scale)
 function getColor(count) {
-  if (count === 0) return "#ffffff"; // No contributions
-  if (count < 3) return "#d1b3ff"; // Light purple
-  if (count < 6) return "#b48ede"; // Medium purple
-  return "#7a52aa"; // Darkest purple
+  if (count === 0) return "#ffffff"; // (No contributions)
+  if (count < 5) return "#d1b3ff"; // Light purple
+  if (count < 10) return "#7a52aa"; // Medium purple
+  if (count < 20) return "#5e1fa1"; // Medium purple
+  return "#3a0077"; // Darkest purple
 }
