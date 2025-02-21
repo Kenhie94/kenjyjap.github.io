@@ -1,9 +1,7 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: "export",
+export default {
+  reactStrictMode: true,
   images: {
-    unoptimized: true,
+    domains: ["github.com"], // Allow GitHub images if needed
   },
 };
-
-export default nextConfig;

@@ -1,0 +1,17 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - cd client  # Move into the client folder if needed
+        - npm install
+    build:
+      commands:
+        - npm run build
+  artifacts:
+    baseDirectory: client/.next  # Use '.next' for SSR Hosting
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - client/node_modules/**/*
